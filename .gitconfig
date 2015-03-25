@@ -1,0 +1,29 @@
+[user]
+	email = yeti-or@yandex-team.ru
+	name = Vasiliy Loginevskiy
+[alias]
+    show-graph = log --graph --abbrev-commit --pretty=oneline
+    logG = log --graph --oneline --decorate
+    port = !git checkout -b "`git symbolic-ref HEAD | cut -b 12-`-port" && git rebase --onto dev support/2.x `git symbolic-ref HEAD | cut -b 12-`
+    backport = !git checkout -b "`git symbolic-ref HEAD | cut -b 12-`-backport" && git rebase --onto support/2.x dev `git symbolic-ref HEAD | cut -b 12-`
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+    st = status -uno
+    b = rev-parse --abbrev-ref HEAD
+    stu =  ls-files -o --exclude-standard 
+[color]
+    ui = true
+[core]
+	excludesfile = /Users/yeti-or/.gitexcludes
+[push]
+	default = upstream
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/1.8.0.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[diff "localizablestrings"]
+    textconv = "iconv -f utf-16 -t utf-8"
