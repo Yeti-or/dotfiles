@@ -28,6 +28,8 @@ cask install focus
 cask install launchcontrol
 cask install totalterminal
 cask install yandexdisk
+cask install sizeup
+cask install alfred
 
 # VM
 cask install virtualbox
