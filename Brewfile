@@ -1,5 +1,3 @@
-# bundle file for brew
-# !brew bundle %
 
 # essential
 git

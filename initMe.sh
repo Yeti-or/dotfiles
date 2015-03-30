@@ -15,6 +15,7 @@ brew install $(cat Brewfile|grep -v "#")
 brew cleanup
 
 # Install casks
+brew install caskroom/cask/brew-cask
 brew cask install $(cat Caskfile|grep -v "#")
 brew cask cleanup
 
