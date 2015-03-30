@@ -10,9 +10,13 @@ fi
 brew update
 brew upgrade
 
-# Install brew & brew-cask bundles
-brew bundle brew
-brew bundle brew-cask
+# Install brews
+brew install $(cat Brewfile|grep -v "#")
+brew cleanup
+
+# Install casks
+brew cask install $(cat Caskfile|grep -v "#")
+brew cask cleanup
 
 rsync --exclude ".git/" --exclude "Init.sh" . ~
 source ~/.bash_profile
