@@ -1,0 +1,4 @@
+--type-set=bemhtml=.bemhtml
+--type-set=bemjson=".bemjson.js"
+
+--ignore-dir=node_modules

@@ -1,0 +1,9 @@
+#Hello vim
+*.swo
+*.swp
+
+#OSX
+.DS_Store
+
+##Node
+npm-debug.log
