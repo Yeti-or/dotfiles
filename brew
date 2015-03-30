@@ -1,0 +1,30 @@
+# bundle file for brew
+# !brew bundle %
+
+# essential
+install git
+install bash
+install bash-completion
+install vim --override-system-vi
+
+# node.JS
+install node
+
+# moving around
+install tree
+install z
+
+# image tools
+install exiftool
+
+# usefull tools
+install ack
+install ngrok
+install git-extras
+install heroku-toolbelt
+install ios-webkit-debug-proxy
+
+# mongo
+install mongodb
+
+cleanup 

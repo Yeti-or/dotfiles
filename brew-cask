@@ -1,0 +1,36 @@
+# bundle file for brew-cask
+# !brew bundle %
+
+install caskroom/cask/brew-cask
+
+# Apps
+cask install transmission
+cask install vlc
+cask install daisydisk
+cask install xscope
+cask install macdown
+cask install iterm2
+
+# Image
+cask install inkscape
+cask install sketch
+
+# Bro
+cask install yandex
+cask install chromium
+cask install firefox
+
+# Util
+cask install apptrap
+cask install asepsis
+cask install beardedspice
+cask install focus
+cask install launchcontrol
+cask install totalterminal
+cask install yandexdisk
+
+# VM
+cask install virtualbox
+cask install genymotion
+
+cask cleanup
