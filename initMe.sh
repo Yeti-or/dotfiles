@@ -19,6 +19,6 @@ brew install caskroom/cask/brew-cask
 brew cask install $(cat Caskfile|grep -v "#")
 brew cask cleanup
 
-rsync --exclude ".git/" --exclude "Init.sh" . ~
+rsync -av . --exclude .git/ --exclude initMe.sh  --exclude Readme.md  --exclude Brefile --exclude CaskFile ~
 source ~/.bash_profile
 

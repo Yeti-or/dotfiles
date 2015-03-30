@@ -9,8 +9,8 @@ source ~/.completion/npm-completion
 alias npmg='npm ls -g | grep -v "│\|  "'
 
 #nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+#export NVM_DIR=~/.nvm
+#source $(brew --prefix nvm)/nvm.sh
 
 #bower completion
 source ~/.completion/bower-completion
@@ -71,8 +71,8 @@ alias ql='qlmanage -p'
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 #Git achievements
-export PATH="$PATH:~/.gitachievements"
-alias git="git-achievements"
+#export PATH="$PATH:~/.gitachievements"
+#alias git="git-achievements"
 
 #.gitignore
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
