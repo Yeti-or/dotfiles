@@ -6,6 +6,7 @@ daisydisk
 xscope
 macdown
 iterm2
+slack
 
 # Image
 sketch
@@ -22,7 +23,7 @@ beardedspice
 focus
 launchcontrol
 totalterminal
-yandexdisk
+#yandexdisk -don't work =(
 sizeup
 alfred
 
