@@ -19,6 +19,9 @@ brew install caskroom/cask/brew-cask
 brew cask install $(cat Caskfile|grep -v "#")
 brew cask cleanup
 
+# Install node modules
+npm install -g $(cat NpmFile|grep -v "#")
+
 rsync -av . --exclude .git/ --exclude initMe.sh  --exclude Readme.md  --exclude Brefile --exclude CaskFile ~
 source ~/.bash_profile
 
