@@ -40,7 +40,7 @@ z_cd() {
 alias z='z_cd'
 
 #brew github fix
-export HOMEBREW_GITHUB_API_TOKEN="56d2e16dbb815bae4cf75f57a54f6a4164c3944e"
+export HOMEBREW_GITHUB_API_TOKEN="2f07c68e24d765a2e28041f7dc8aee90462f0f54"
 
 #openx script by @orta
 openx(){ 
