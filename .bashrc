@@ -1,5 +1,7 @@
 #Yandex
 alias ynpm='npm --registry http://npm.yandex-team.ru'
+export isl=~/Projects/Y/islands
+export BEM=~/Projects/Y/BEM
 
 #Git completion
 source ~/.completion/git-completion.bash

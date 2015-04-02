@@ -1,4 +1,8 @@
 
 bower
+
 #Linters
 jshint
+
+#tools
+gemini-gui

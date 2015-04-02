@@ -10,6 +10,8 @@ slack
 
 # Image
 sketch
+imagealpha
+imageoptim
 
 # Bro
 yandex
