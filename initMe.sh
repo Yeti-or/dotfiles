@@ -23,6 +23,9 @@ brew cask cleanup
 npm install -g npm
 npm install -g $(cat NpmFile|grep -v "#")
 
+# Install gems
+sudo gem install cocoapods
+
 rsync -av . --exclude .git/ --exclude "*.sh"  --exclude Readme.md  --exclude "*file" ~
 source ~/.bash_profile
 
