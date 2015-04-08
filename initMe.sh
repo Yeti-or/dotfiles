@@ -29,3 +29,4 @@ sudo gem install cocoapods
 rsync -av . --exclude .git/ --exclude "*.sh"  --exclude Readme.md  --exclude "*file" ~
 source ~/.bash_profile
 
+./os_x.sh 
