@@ -95,3 +95,6 @@ unfocus(){
 
 alias metro='curl --data "buttonClicked=4&username=mosmetro&password=gfhjkm&redirect_url=/&err_flag=0" http://1.1.1.1/login.html'
 
+alias cat='ccat'
+hash -r
+
