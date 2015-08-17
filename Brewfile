@@ -24,6 +24,7 @@ heroku-toolbelt
 ios-webkit-debug-proxy
 jingweno/ccat/ccat
 cmatrix
+ccat
 
 # mongo
 mongodb
