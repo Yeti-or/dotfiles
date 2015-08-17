@@ -4,7 +4,15 @@ bower
 #Linters
 jshint
 
+#Builders
+gulp
+grunt
+browserify
+
 #tools
 gemini-gui
+caniuse-cmd
+node-inspector
+yo
 
 n

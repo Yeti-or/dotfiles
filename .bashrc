@@ -64,17 +64,14 @@ fi
 }
 
 #show quick look of file
-#ql(){
-#    qlmanage -p "${1}"
-#}
+#alias ql='qlmanage -p '
+ql(){
+    qlmanage -p 2&>/dev/null "${1}"
+}
 
-alias ql='qlmanage -p'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-#Git achievements
-#export PATH="$PATH:~/.gitachievements"
-#alias git="git-achievements"
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
 
 #.gitignore
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
@@ -85,16 +82,10 @@ alias hub='gh'
 #totalTerminal
 alias tt='osascript -e "tell application \"Terminal\" to «event BATTinit»"'
 
-#Focus.app
-focus(){
-    open focus://focus
-}
-unfocus(){
-    open focus://unfocus
-}
-
-alias metro='curl --data "buttonClicked=4&username=mosmetro&password=gfhjkm&redirect_url=/&err_flag=0" http://1.1.1.1/login.html'
-
+#ccat
 alias cat='ccat'
 hash -r
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
