@@ -13,7 +13,7 @@
 [color]
     ui = true
 [core]
-	excludesfile = /Users/yeti-or/.gitexcludes
+	excludesfile = ~/.gitexcludes
 [push]
 	default = upstream
 [difftool "sourcetree"]
