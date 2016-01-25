@@ -11,17 +11,17 @@ brew update
 brew upgrade
 
 # Install brews
-brew install $(cat Brewfile|grep -v "#")
+brew install $(cat Brewfile | grep -v "#")
 brew cleanup
 
 # Install casks
 brew install caskroom/cask/brew-cask
-brew cask install $(cat Caskfile|grep -v "#")
+brew cask install $(cat Caskfile | grep -v "#")
 brew cask cleanup
 
 # Install node modules
 npm install -g npm
-npm install -g $(cat NpmFile|grep -v "#")
+npm install -g $(cat NpmFile | grep -v "#")
 
 # Install gems
 sudo gem install cocoapods

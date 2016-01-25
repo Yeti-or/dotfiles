@@ -1,6 +1,9 @@
 #Hello vim
 *.swo
 *.swp
+.swl
+.swm
+.swn
 
 #OSX
 .DS_Store
