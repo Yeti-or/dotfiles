@@ -65,8 +65,8 @@ fi
 
 #show quick look of file
 #alias ql='qlmanage -p '
-ql(){
-    qlmanage -p 2&>/dev/null "${1}"
+ql() {
+    qlmanage -p "$@" 2>/dev/null
 }
 
 
