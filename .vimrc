@@ -35,3 +35,6 @@ set background=dark
 
 "Set line numbers"
 set nu
+
+"Normal paste"
+set paste
