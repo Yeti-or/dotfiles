@@ -1,9 +1,7 @@
 #Hello vim
-*.swo
-*.swp
-.swl
-.swm
-.swn
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
 
 #OSX
 .DS_Store

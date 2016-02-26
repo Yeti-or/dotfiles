@@ -1,3 +1,10 @@
+#Globals
+export LANG=ru_RU.UTF-8
+export LC_ALL="$LANG"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 #Yandex
 alias ynpm='npm --registry http://npm.yandex-team.ru'
 export isl=~/Projects/Y/islands
@@ -9,6 +16,8 @@ source ~/.completion/git-completion.bash
 #npm completion
 source ~/.completion/npm-completion
 alias npmg='npm ls -g | grep -v "│\|  "'
+#PATH FIX
+export PATH=./node_modules/.bin:$PATH
 
 #nvm
 #export NVM_DIR=~/.nvm
@@ -25,8 +34,6 @@ fi
 #BEM 
 #completion
 source ~/.completion/bem-completion
-#PATH FIX
-export PATH=./node_modules/.bin:$PATH
 
 #run for brew -> z
 . `brew --prefix`/etc/profile.d/z.sh
@@ -89,6 +96,3 @@ hash -r
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-export VISUAL=vim
-export EDITOR="$VISUAL"
