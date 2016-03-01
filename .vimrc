@@ -1,7 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" For ubuntu
+" => Text <= ===========================================
 set encoding=utf8
 
 " Use spaces instead of tabs
@@ -17,9 +14,9 @@ set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors, text  and Fonts
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Appearance <= ===========================================
+set nu
+
 " Enable syntax highlighting
 syntax enable
 
@@ -30,11 +27,12 @@ au BufNewFile,BufRead *.bemhtml setf javascript
 au BufNewFile,BufRead *.xjst setf javascript
 au BufNewFile,BufRead *.less setf css
 
-colorscheme desert
+"colorscheme desert
+"colorscheme inkpot
+colorscheme mango
+
 set background=dark
 
-"Set line numbers"
-set nu
-
-"Normal paste"
+" => VIM <= ===========================================
 set paste
+set noswapfile
