@@ -1,4 +1,4 @@
-" => Text <= ===========================================
+" => Text <= ==========================================
 set encoding=utf8
 
 " Use spaces instead of tabs
@@ -14,7 +14,7 @@ set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 
-" => Appearance <= ===========================================
+" => Appearance <= ====================================
 set nu
 
 " Enable syntax highlighting
