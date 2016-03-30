@@ -23,12 +23,8 @@ syntax enable
 au BufNewFile,BufRead *.js setf javascript
 au BufNewFile,BufRead *.swift setf javascript
 au BufNewFile,BufRead *.sketchplugin setf javascript
-au BufNewFile,BufRead *.bemhtml setf javascript
-au BufNewFile,BufRead *.xjst setf javascript
 au BufNewFile,BufRead *.less setf css
 
-"colorscheme desert
-"colorscheme inkpot
 colorscheme mango
 
 set background=dark
