@@ -89,6 +89,9 @@ alias hub='gh'
 #totalTerminal
 alias tt='osascript -e "tell application \"Terminal\" to «event BATTinit»"'
 
+#check weather
+alias weather='curl wttr.in'
+
 #ccat
 alias cat='ccat'
 hash -r
