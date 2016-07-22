@@ -19,6 +19,8 @@ set nu
 
 " Enable syntax highlighting
 syntax on
+" Enable highlight on search pattern
+set hlsearch
 
 au BufNewFile,BufRead *.js setf javascript
 au BufNewFile,BufRead *.swift setf javascript
