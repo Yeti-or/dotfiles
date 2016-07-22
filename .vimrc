@@ -18,17 +18,18 @@ set si "Smart indent
 set nu
 
 " Enable syntax highlighting
-syntax enable
+syntax on
 
 au BufNewFile,BufRead *.js setf javascript
 au BufNewFile,BufRead *.swift setf javascript
 au BufNewFile,BufRead *.sketchplugin setf javascript
-au BufNewFile,BufRead *.less setf css
 
 colorscheme mango
 
 set background=dark
 
 " => VIM <= ===========================================
-set paste
 set noswapfile
+
+" russian lang in normal mode
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
