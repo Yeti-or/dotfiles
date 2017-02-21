@@ -35,3 +35,8 @@ set noswapfile
 
 " russian lang in normal mode
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
+" => netrw <===========================================
+
+" Allow netrw to remove non-empty local directories
+let g:netrw_localrmdir='rm -r'
