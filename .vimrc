@@ -22,9 +22,10 @@ syntax on
 " Enable highlight on search pattern
 set hlsearch
 
-au BufNewFile,BufRead *.js setf javascript
-au BufNewFile,BufRead *.swift setf javascript
-au BufNewFile,BufRead *.sketchplugin setf javascript
+" everything is javascript for me
+au BufNewFile,BufRead *.ts set filetype=javascript
+au BufNewFile,BufRead *.swift set filetype=javascript
+au BufNewFile,BufRead *.sketchplugin set filetype=javascript
 
 colorscheme mango
 
