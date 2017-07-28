@@ -14,6 +14,9 @@ z
 
 # image tools
 exiftool
+ffmpeg
+imagemagick
+gifify
 
 # usefull tools
 ack
