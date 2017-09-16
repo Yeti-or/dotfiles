@@ -16,8 +16,6 @@ source ~/.completion/git-completion.bash
 #npm completion
 source ~/.completion/npm-completion
 alias npmg='npm ls -g | grep -v "│\|  "'
-#PATH FIX
-export PATH=./node_modules/.bin:$PATH
 
 #nvm
 #export NVM_DIR=~/.nvm
@@ -34,6 +32,12 @@ fi
 #BEM 
 #completion
 source ~/.completion/bem-completion
+
+#PATH FIX
+export PATH=./node_modules/.bin:$PATH
+export PATH=$PATH:bin
+
+export NODE_PATH=./node_modules:$(npm root -g)
 
 #run for brew -> z
 . `brew --prefix`/etc/profile.d/z.sh
@@ -76,18 +80,14 @@ ql() {
     qlmanage -p "$@" 2>/dev/null
 }
 
-
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 
 #.gitignore
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-#gh
-alias hub='gh'
-
-#totalTerminal
-alias tt='osascript -e "tell application \"Terminal\" to «event BATTinit»"'
+#enable i-search by ctrl+s
+stty -ixon
 
 #check weather
 alias weather='curl wttr.in'
