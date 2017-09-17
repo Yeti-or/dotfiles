@@ -4,6 +4,7 @@
 [alias]
     show-graph = log --graph --abbrev-commit --pretty=oneline
     logG = log --graph --oneline --decorate
+    logD = log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s\"
     st = status -uno
     b = rev-parse --abbrev-ref HEAD
     stu = ls-files -o --exclude-standard
@@ -13,3 +14,10 @@
 	excludesfile = ~/.gitexcludes
 [diff "localizablestrings"]
     textconv = "iconv -f utf-16 -t utf-8"
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge --skip %f
+[lfs]
+	batch = true
+	concurrenttransfers = 15
