@@ -8,6 +8,7 @@
     st = status -uno
     b = rev-parse --abbrev-ref HEAD
     stu = ls-files -o --exclude-standard
+    git = !exec git
 [color]
     ui = true
 [core]
