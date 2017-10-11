@@ -14,6 +14,9 @@ set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 
+" use backspace for everything
+set backspace=indent,eol,start
+
 " => Appearance <= ====================================
 set nu
 
@@ -24,8 +27,6 @@ set hlsearch
 
 " everything is javascript for me
 au BufNewFile,BufRead *.ts set filetype=javascript
-au BufNewFile,BufRead *.swift set filetype=javascript
-au BufNewFile,BufRead *.sketchplugin set filetype=javascript
 
 colorscheme mango
 
@@ -38,6 +39,5 @@ set noswapfile
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
 " => netrw <===========================================
-
 " Allow netrw to remove non-empty local directories
 let g:netrw_localrmdir='rm -r'
