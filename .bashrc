@@ -6,6 +6,7 @@ export EDITOR=vim
 
 #Yandex
 alias ynpm='npm --registry http://npm.yandex-team.ru'
+alias gnpm='npm --registry https://registry.npmjs.org'
 export isl=~/Projects/Y/islands
 export BEM=~/Projects/Y/BEM
 
@@ -78,6 +79,7 @@ fi
 ql() {
     qlmanage -p "$@" 2>/dev/null
 }
+
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
