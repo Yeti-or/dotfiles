@@ -92,6 +92,7 @@ stty -ixon
 
 #check weather
 alias weather='curl wttr.in'
+alias bitcoin='curl rate.sx'
 
 #ccat
 alias cat='ccat'
