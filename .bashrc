@@ -100,3 +100,9 @@ hash -r
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
+# get wifi password from keychain
+wifi() {
+    security find-generic-password -g -w -a $1
+}
+
