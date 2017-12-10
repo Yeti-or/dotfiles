@@ -1,9 +1,8 @@
 #Globals
 export LANG=ru_RU.UTF-8
-export LC_ALL="$LANG"
+export LC_ALL=$LANG
 
-export VISUAL=vim
-export EDITOR="$VISUAL"
+export EDITOR=vim
 
 #Yandex
 alias ynpm='npm --registry http://npm.yandex-team.ru'
